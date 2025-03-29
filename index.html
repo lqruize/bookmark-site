@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI工具导航</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner-circle"></div>
+            <div class="spinner-circle"></div>
+            <div class="spinner-circle"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1 class="main-title">AI工具导航</h1>
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="搜索AI工具...">
+            </div>
+            <button class="search-button">搜索</button>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <button class="category-btn active" data-category="all">全部</button>
+        <button class="category-btn" data-category="text">文本</button>
+        <button class="category-btn" data-category="image">图像</button>
+        <button class="category-btn" data-category="video">视频</button>
+    </nav>
+
+    <main class="tools-container">
+        <div class="tool-card" data-category="text" data-id="chatgpt">
+            <div class="tool-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3 class="tool-title">ChatGPT</h3>
+            <p class="tool-description">OpenAI开发的强大语言模型，可以进行自然对话、写作、编程等任务。</p>
+            <div class="tool-actions">
+                <a href="https://chat.openai.com" class="tool-link" target="_blank">访问网站</a>
+                <button class="favorite-btn" data-id="chatgpt">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="tool-card" data-category="image" data-id="midjourney">
+            <div class="tool-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="tool-title">Midjourney</h3>
+            <p class="tool-description">AI图像生成工具，可以根据文字描述生成高质量艺术作品。</p>
+            <div class="tool-actions">
+                <a href="https://www.midjourney.com" class="tool-link" target="_blank">访问网站</a>
+                <button class="favorite-btn" data-id="midjourney">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="tool-card" data-category="video" data-id="runway">
+            <div class="tool-icon">
+                <i class="fas fa-video"></i>
+            </div>
+            <h3 class="tool-title">Runway</h3>
+            <p class="tool-description">专业的AI视频编辑工具，支持视频生成、编辑和特效制作。</p>
+            <div class="tool-actions">
+                <a href="https://runwayml.com" class="tool-link" target="_blank">访问网站</a>
+                <button class="favorite-btn" data-id="runway">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="tool-card" data-category="text" data-id="deepl">
+            <div class="tool-icon">
+                <i class="fas fa-language"></i>
+            </div>
+            <h3 class="tool-title">DeepL</h3>
+            <p class="tool-description">AI驱动的专业翻译工具，支持多种语言互译，翻译质量极高。</p>
+            <div class="tool-actions">
+                <a href="https://www.deepl.com" class="tool-link" target="_blank">访问网站</a>
+                <button class="favorite-btn" data-id="deepl">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="tool-card" data-category="image" data-id="dalle">
+            <div class="tool-icon">
+                <i class="fas fa-magic"></i>
+            </div>
+            <h3 class="tool-title">DALL-E</h3>
+            <p class="tool-description">OpenAI开发的AI图像生成工具，可以将文字描述转换为独特的图像。</p>
+            <div class="tool-actions">
+                <a href="https://openai.com/dall-e-2" class="tool-link" target="_blank">访问网站</a>
+                <button class="favorite-btn" data-id="dalle">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
